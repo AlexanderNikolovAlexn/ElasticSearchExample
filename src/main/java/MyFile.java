@@ -39,4 +39,13 @@ public class MyFile implements JsonInterface {
     public String toJson() {
         return new Gson().toJson(this);
     }
+
+    @Override
+    public String toString() {
+        return "MyFile{" +
+                "fileName='" + fileName + '\'' +
+                ", fileExtention='" + fileExtention + '\'' +
+                ", directoryName='" + directoryName + '\'' +
+                '}';
+    }
 }
