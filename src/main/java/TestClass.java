@@ -2,7 +2,9 @@ import com.google.common.io.Files;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class TestClass {
 
@@ -14,29 +16,46 @@ public class TestClass {
 
         String indexName = "testfiles";
         String indexType = "files";
-        String dir = "C:\\dev\\tmp";
+        String dir = "C:\\dev\\eclipse mars";
         List<JsonInterface> myfiles = new ArrayList<JsonInterface>();
         getFiles(dir, myfiles);
         ESClient esClient = new ESClient(HOSTNAME, PORTNUMBER, CLUSTERNAME);
 
-        long startTime = System.nanoTime();
+        // insertOneByOne(indexName, indexType, myfiles, esClient);
+        // insertBulk(indexType, myfiles, esClient);
+        searchText(indexName, indexType, myfiles, esClient);
+    }
 
-        // create index
-        if(esClient.indexExists(indexName)) {
-            esClient.deleteIndex(indexName);
+    private static void searchText(String indexName, String indexType, List<JsonInterface> myfiles, ESClient esClient) {
+        long startTime;
+        long stopTime;
+        double elapsedTimeSeconds;
+        double elapsedTimeMiliSeconds;
+
+        Map<String, String> filters = new HashMap<String, String>();
+        filters.put("fileExtention", "cla*");
+        filters.put("fileName", "ne*");
+        System.out.println("Start searching!");
+
+        startTime = System.nanoTime();
+        //List<JsonInterface> myFiles = esClient.getJsonMatchAll(indexName, indexType);
+        List<JsonInterface> myFiles = esClient.getJsonFilter(indexName, indexType, filters);
+        stopTime = System.nanoTime();
+        elapsedTimeSeconds = (double) ((stopTime - startTime) / 1000000000);
+        elapsedTimeMiliSeconds = (double) ((stopTime - startTime) / 1000000);
+
+        for(JsonInterface myFile: myFiles) {
+            System.out.println(myFile.toString());
         }
-        esClient.createIndex(indexName);
 
-        // insert in index
-        System.out.println("Start one by one inserting!");
-        for (int i = 0; i < myfiles.size(); i++) {
-            esClient.addJSON(indexName, indexType, String.valueOf(i), myfiles.get(i));
-        }
+        System.out.println("Found: " + myfiles.size() + " records. Elapsed time: " + elapsedTimeSeconds + "s(" + elapsedTimeMiliSeconds + "ms)");
+    }
 
-        long stopTime = System.nanoTime();
-        double elapsedTimeSeconds = (double) ((stopTime - startTime) / 1000000000);
-        double elapsedTimeMiliSeconds = (double) ((stopTime - startTime) / 1000000);
-        System.out.println("Inserted: " + myfiles.size() + " Elapsed time: " + elapsedTimeSeconds + "s(" + elapsedTimeMiliSeconds + "ms)");
+    private static void insertBulk(String indexType, List<JsonInterface> myfiles, ESClient esClient) {
+        long startTime;
+        long stopTime;
+        double elapsedTimeSeconds;
+        double elapsedTimeMiliSeconds;
 
         String indexNameBulk = "testfilesbulk";
 
@@ -56,6 +75,27 @@ public class TestClass {
         elapsedTimeSeconds = (double) ((stopTime - startTime) / 1000000000);
         elapsedTimeMiliSeconds = (double) ((stopTime - startTime) / 1000000);
         System.out.println("Bulk inserted: " + myfiles.size() + " Elapsed time: " + elapsedTimeSeconds + "s(" + elapsedTimeMiliSeconds + "ms)");
+    }
+
+    private static void insertOneByOne(String indexName, String indexType, List<JsonInterface> myfiles, ESClient esClient) {
+        long startTime = System.nanoTime();
+
+        // create index
+        if(esClient.indexExists(indexName)) {
+            esClient.deleteIndex(indexName);
+        }
+        esClient.createIndex(indexName);
+
+        // insert in index
+        System.out.println("Start one by one inserting!");
+        for (int i = 0; i < myfiles.size(); i++) {
+            esClient.addJSON(indexName, indexType, String.valueOf(i), myfiles.get(i));
+        }
+
+        long stopTime = System.nanoTime();
+        double elapsedTimeSeconds = (double) ((stopTime - startTime) / 1000000000);
+        double elapsedTimeMiliSeconds = (double) ((stopTime - startTime) / 1000000);
+        System.out.println("Inserted: " + myfiles.size() + " Elapsed time: " + elapsedTimeSeconds + "s(" + elapsedTimeMiliSeconds + "ms)");
     }
 
     public static void getFiles(String directoryName, List<JsonInterface> files) {

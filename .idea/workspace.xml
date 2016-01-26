@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f38e0047-ee42-45fd-9e86-f39a1bf6da60" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ESClient.class" afterPath="$PROJECT_DIR$/target/classes/ESClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MyFile.class" afterPath="$PROJECT_DIR$/target/classes/MyFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TestClass.class" afterPath="$PROJECT_DIR$/target/classes/TestClass.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ESClient.java" afterPath="$PROJECT_DIR$/src/main/java/ESClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyFile.java" afterPath="$PROJECT_DIR$/src/main/java/MyFile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TestClass.java" afterPath="$PROJECT_DIR$/src/main/java/TestClass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,12 +29,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MainApp.java">
+      <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="76" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="76" />
-              <folding />
+            <state vertical-scroll-proportion="0.5074627">
+              <caret line="50" column="145" selection-start-line="50" selection-start-column="145" selection-end-line="50" selection-end-column="145" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#537#552#0" expanded="true" />
+                <element signature="e#1147#1163#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,22 +47,11 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ESClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="86" selection-start-line="96" selection-start-column="86" selection-end-line="96" selection-end-column="86" />
+              <caret line="139" column="56" selection-start-line="139" selection-start-column="56" selection-end-line="139" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TestClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9275053">
-              <caret line="57" column="108" selection-start-line="57" selection-start-column="108" selection-end-line="57" selection-end-column="108" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#480#495#0" expanded="true" />
+                <element signature="e#5439#5454#0" expanded="true" />
+                <element signature="e#6285#6300#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,9 +82,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/MyFiles.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JsonInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/ESClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JsonInterface.java" />
       </list>
     </option>
   </component>
@@ -247,6 +236,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunManager" selected="Application.TestClass">
     <configuration default="false" name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -551,12 +541,12 @@
       <updated>1453374188916</updated>
       <workItem from="1453374191314" duration="1877000" />
       <workItem from="1453376297236" duration="16853000" />
-      <workItem from="1453709337688" duration="12203000" />
+      <workItem from="1453709337688" duration="20448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30933000" />
+    <option name="totallyTimeSpent" value="39178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -570,7 +560,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32928476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32928476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.168125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -579,7 +569,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994602" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -607,7 +597,10 @@
           <properties />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -630,6 +623,8 @@
           <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5439#5454#0" expanded="true" />
+            <element signature="e#6285#6300#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -640,7 +635,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#480#495#0" expanded="true" />
+            <element signature="e#537#552#0" expanded="true" />
+            <element signature="e#1147#1163#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -707,6 +703,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3326226">
           <caret line="324" column="11" selection-start-line="324" selection-start-column="11" selection-end-line="324" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -794,16 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ESClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="86" selection-start-line="96" selection-start-column="86" selection-end-line="96" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JsonInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07249467">
@@ -812,13 +799,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestClass.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/2.1.1/elasticsearch-2.1.1.jar!/org/elasticsearch/action/search/SearchType.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9275053">
-          <caret line="57" column="108" selection-start-line="57" selection-start-column="108" selection-end-line="57" selection-end-column="108" />
+        <state vertical-scroll-proportion="0.115384616">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/2.1.1/elasticsearch-2.1.1.jar!/org/elasticsearch/client/support/AbstractClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.814815">
+          <caret line="523" column="0" selection-start-line="523" selection-start-column="0" selection-end-line="523" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/2.1.1/elasticsearch-2.1.1.jar!/org/elasticsearch/action/search/SearchRequestBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.1923077">
+          <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/2.1.1/elasticsearch-2.1.1.jar!/org/elasticsearch/index/query/QueryBuilders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0769231">
+          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ESClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="139" column="56" selection-start-line="139" selection-start-column="56" selection-end-line="139" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#480#495#0" expanded="true" />
+            <element signature="e#5439#5454#0" expanded="true" />
+            <element signature="e#6285#6300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5074627">
+          <caret line="50" column="145" selection-start-line="50" selection-start-column="145" selection-end-line="50" selection-end-column="145" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#537#552#0" expanded="true" />
+            <element signature="e#1147#1163#0" expanded="true" />
           </folding>
         </state>
       </provider>
